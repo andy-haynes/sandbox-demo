@@ -7,9 +7,7 @@ export default {
     output: {
         compact: true,
         file: 'dist/index.js',
-        name: 'NearSocialRootWidget',
         format: 'iife',
-        sourcemap: true,
         globals: {
             'near-api-js': 'nearApi',
             react: 'React',

@@ -1,5 +1,6 @@
-import React from 'react';
 import * as nearApi from 'near-api-js';
+import React from 'react';
+import ReactDOM from 'react-dom/client.js';
 import { useNearSocialApi } from 'widget-api';
 
 const SEND_NEAR_RECIPIENT_ID = 'vmpoc.testnet';
@@ -13,7 +14,7 @@ function getAccount(accountId) {
     }), accountId);
 }
 
-export default function () {
+function App() {
     const [accountId, setAccountId] = React.useState(SEND_NEAR_RECIPIENT_ID);
     const [balance, setBalance] = React.useState(null);
     const [localStorageSecret, setLocalStorageSecret] = React.useState('uninitialized LocalStorage secret');
@@ -71,3 +72,6 @@ export default function () {
         </div>
     );
 }
+
+ReactDOM.createRoot(document.getElementById('app'))
+    .render(<App />);
