@@ -17,16 +17,16 @@ importers:
       dotenv: ^16.0.3
       dotenv-cli: ^7.1.0
       near-api-js: ^1.1.0
+      near-social-api: workspace:*
       react: ^18.2.0
       react-dom: ^18.2.0
       rollup: ^3.19.0
       rollup-plugin-uglify: ^6.0.4
-      widget-api: workspace:*
     dependencies:
       near-api-js: 1.1.0
+      near-social-api: link:../near-social-api
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      widget-api: link:../near-social-api
     devDependencies:
       '@babel/core': 7.21.0
       '@babel/preset-react': 7.18.6_@babel+core@7.21.0

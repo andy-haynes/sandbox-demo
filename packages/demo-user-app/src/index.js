@@ -1,7 +1,7 @@
 import * as nearApi from 'near-api-js';
 import React from 'react';
 import ReactDOM from 'react-dom/client.js';
-import { useNearSocialApi } from 'widget-api';
+import { useNearSocialApi } from 'near-social-api';
 
 const SEND_NEAR_RECIPIENT_ID = 'vmpoc.testnet';
 const SEND_NEAR_SENDER_ID = 'gornt.testnet';
