@@ -1,11 +1,11 @@
 {
-  "name": "user-widget-example",
+  "name": "demo-user-app",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "build": "PROJECT_NAME=andy-demo rollup -c",
+    "build": "rollup -c",
     "deploy": "pnpm build && pnpm upload",
     "upload": "dotenv -e ../../.env aws s3 sync dist s3://js-external-bundles-ns/andy-demo/"
   },

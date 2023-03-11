@@ -1,0 +1,16 @@
+
+> demo-user-app@1.0.0 build /Users/andy/workspace/sandbox-demo/packages/demo-user-app
+> rollup -c
+
+[36m
+[1msrc/index.js[22m → [1mdist/index.js[22m...[39m
+babelHelpers: 'bundled' option was used by default. It is recommended to configure this option explicitly, read more here: https://github.com/rollup/plugins/tree/master/packages/babel#babelhelpers
+[1m[33m(!) Plugin node-resolve: Could not resolve import "react-dom/client.js" in /Users/andy/workspace/sandbox-demo/packages/demo-user-app/src/index.js using exports defined in /Users/andy/workspace/sandbox-demo/node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/package.json.[39m[22m
+[1m[33m(!) Unresolved dependencies[39m[22m
+[90mhttps://rollupjs.org/troubleshooting/#warning-treating-module-as-external-dependency[39m
+[1mreact-dom/client.js[22m (imported by "src/index.js")
+[1m[33m(!) Missing global variable name[39m[22m
+[90mhttps://rollupjs.org/configuration-options/#output-globals[39m
+Use "output.globals" to specify browser global variable names corresponding to external modules:
+[1mreact-dom/client.js[22m (guessing "ReactDOM")
+[32mcreated [1mdist/index.js[22m in [1m541ms[22m[39m
