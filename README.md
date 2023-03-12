@@ -20,8 +20,8 @@ This demo relies on the bundle for the external component being hosted on an ext
 (i.e. non-localhost) domain. The `js-external-bundles-ns` S3 bucket is used as a hosting
 solution currently; to use this you will need the `.env` file at the project root with AWS
 access keys for an account permitted to upload to that bucket. When using the established
-S3 bucket, be sure to change references to the bucket prefix currently hardcoded to `andy-demo`
-to ensure that your demo does not overwrite someone else's.
+S3 bucket, be sure to change all references to the bucket prefix currently hardcoded to
+`andy-demo` to ensure that your demo does not overwrite someone else's.
 
 To build the bundle locally, run:
 ```shell
